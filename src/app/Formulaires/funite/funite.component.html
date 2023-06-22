@@ -1,0 +1,75 @@
+
+<div class="dashboard-main-wrapper">
+    <!-- ============================================================== -->
+    <app-navbar></app-navbar>
+    <!-- ============================================================== -->
+    <app-sidebar></app-sidebar>
+<div class="dashboard-wrapper">
+    <div class="dashboard-ecommerce">
+        <div class="container-fluid dashboard-content ">
+<div class="row">
+    <!-- ============================================================== -->
+    <!-- validation form -->
+    <!-- ============================================================== -->
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+            <h5 class="card-header">FORMULAIRE D'ENREGISTREMENT DES UNITES</h5>
+            <div class="card-body">
+                <form (ngSubmit)="saveData()" class="needs-validation" novalidate [formGroup]="uniteForm">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                            <label for="validationCustom01">Unité</label>
+                            <input type="text" class="form-control" id="validationCustom01" formControlName="name" placeholder="Saisir nom de l'unité"
+                            [ngClass]="{
+                                'is-invalid': uniteForm.get('name').touched && !uniteForm.get('name').valid
+                            }" minlength="5">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                <span *ngIf="uniteForm.get('name').errors?.required">Entrez le nom de l'unité</span>
+                                <span *ngIf="uniteForm.get('name').errors?.minlength">Au minimum 5 caractère</span>
+                            </div>
+                        </div>
+                    <br><br><br><br>
+                   
+                            <!-- <label for="sendCatalogId" class="form-check-label"  style="margin-left: 35px;">
+                                <input type="checkBox" class="form-check-input" formControlName="sendCatalog" [(ngModel)]="sendCatalog">
+                                Militaire
+                            </label>
+                          
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 " *ngIf="sendCatalog">
+                                
+                                <label for="validationCustom01">Grade</label>
+                                <input type="text" class="form-control" id="validationCustom01" formControlName="grade" placeholder="Saisir grade"
+                                [ngClass]="{
+                                    'is-invalid': uniteForm.get('name').touched && !uniteForm.get('name').valid
+                                }" minlength="5">
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    <span *ngIf="uniteForm.get('name').errors?.required">Entrez le nom de l'unité</span>
+                                    <span *ngIf="uniteForm.get('name').errors?.minlength">Au minimum 5 caractère</span>
+                                </div>
+                                <br><br>
+                            </div> -->
+                      
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                            <button class="btn btn-primary" type="submit" [disabled]="!uniteForm.valid">Enregistrer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end validation form -->
+    <!-- ============================================================== -->
+</div>
+</div>
+</div>
+</div>
+<app-footer></app-footer>
+
+</div>
