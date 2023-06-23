@@ -1,8 +1,8 @@
 import { Component,OnInit, ViewChild  } from '@angular/core';
-
+import { MatPaginator } from '@angular/material/paginator';
 import { ToastrService } from 'ngx-toastr';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
-
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-gestion-unite',
@@ -10,8 +10,8 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
   styleUrls: ['./gestion-unite.component.css']
 })
 export class GestionUniteComponent implements OnInit {
-  //@ViewChild(MatPaginator) paginator: MatPaginator  = <MatPaginator>{};
-  //@ViewChild(MatSort) sort: MatSort  = <MatSort>{};
+  @ViewChild(MatPaginator) paginator: MatPaginator  = <MatPaginator>{};
+  @ViewChild(MatSort) sort: MatSort  = <MatSort>{};
 
   constructor( private ngxService : NgxUiLoaderService,private toastr: ToastrService){}
 
