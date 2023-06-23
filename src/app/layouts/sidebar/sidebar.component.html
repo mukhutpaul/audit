@@ -14,7 +14,7 @@
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
-                                <div id="submenu-1" class="collapse submenu" style="">
+                                <div id="submenu-1" class="collapse submenu" >
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#"routerLink="/home" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">Tableau de bord</a>
@@ -30,10 +30,10 @@
                                     <ul class="nav flex-column">
                                        
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/general.html">Profiles</a>
+                                            <a class="nav-link" routerLink="/profile">Profiles</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/carousel.html">Utilisateurs</a>
+                                            <a class="nav-link" routerLink="/user">Utilisateurs</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -46,25 +46,28 @@
                                             <a class="nav-link" routerLink="/unite">Unités</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-chartist.html">Financier</a>
+                                            <a class="nav-link" routerLink="/grade">Grade</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" routerLink="/financier">Financier</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" routerLink="/mission">Missions</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-morris.html">Missions unités</a>
+                                            <a class="nav-link" routerLink="/missionunite">Missions unités</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-sparkline.html">Catégorie</a>
+                                            <a class="nav-link" routerLink="/categorie">Catégorie</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-gauge.html">Documents</a>
+                                            <a class="nav-link" routerLink="/document">Documents</a>
                                         </li>
                                          <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-gauge.html">Audits</a>
+                                            <a class="nav-link" routerLink="/audit">Audits</a>
                                         </li>
                                          <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-gauge.html">Details audits</a>
+                                            <a class="nav-link" routerLink="/detailaudit">Details audits</a>
                                         </li>
                                     </ul>
                                 </div>

@@ -14,6 +14,8 @@ import { AuditComponent } from './pages/audit/audit.component';
 import { DocumentComponent } from './pages/document/document.component';
 import { DetailAuditComponent } from './pages/detail-audit/detail-audit.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { MissionUniteComponent } from './pages/mission-unite/mission-unite.component';
+import { GradeComponent } from './pages/grade/grade.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'fmission', component: FMissionComponent },
   { path: 'detailaudit', component: DetailAuditComponent},
   { path: 'profile', component: ProfileComponent},
+  { path: 'missionunite', component: MissionUniteComponent},
+  { path: 'grade', component: GradeComponent},
 
 ];
 
