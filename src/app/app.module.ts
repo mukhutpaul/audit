@@ -22,6 +22,15 @@ import { ToastrModule } from 'ngx-toastr';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { TokenInterceptorInterceptor } from './services/token-interceptor.interceptor';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { UserComponent } from './pages/user/user.component';
+import { FinancierComponent } from './pages/financier/financier.component';
+import { AuditComponent } from './pages/audit/audit.component';
+import { MissionUniteComponent } from './pages/mission-unite/mission-unite.component';
+import { GradeComponent } from './pages/grade/grade.component';
+import { DetailAuditComponent } from './pages/detail-audit/detail-audit.component';
+import { DocumentComponent } from './pages/document/document.component';
+import { CategorieComponent } from './pages/categorie/categorie.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   text:"Loading...",
@@ -48,7 +57,16 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     GestionMissionComponent,
     FUniteComponent,
     FMissionComponent,
-    HomeComponent
+    HomeComponent,
+    UserComponent,
+    FinancierComponent,
+    AuditComponent,
+    MissionUniteComponent,
+    GradeComponent,
+    DetailAuditComponent,
+    DocumentComponent,
+    CategorieComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
